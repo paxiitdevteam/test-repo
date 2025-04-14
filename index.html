@@ -2,25 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PaxiitDevTeam - Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PaxiitDevTeam | Smart IT Management</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
     <h1>Welcome to PaxiitDevTeam!</h1>
-    <p>Smart IT Management. Clear Results.</p>
+    <p class="tagline">Smart IT Management. Clear Results.</p>
   </header>
 
-  <section>
-    <h2>Our Mission</h2>
-    <p>We build clear, modern, and smart IT systems — with real-world results.</p>
-  </section>
+  <main>
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>We build clear, modern, and smart IT systems — with real-world results.</p>
+    </section>
+
+    <section class="services">
+      <h2>What We Do</h2>
+      <ul>
+        <li>🔧 IT Project Management</li>
+        <li>🌐 Cloud & Infrastructure Solutions</li>
+        <li>🧠 AI & Prompt Engineering</li>
+        <li>🔐 Security & Compliance</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <fieldset>
+          <legend>Contact Us</legend>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+          
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Your email" required />
+          
+          <label for="message">Your Message</label>
+          <textarea id="message" placeholder="Your message" rows="4"></textarea>
+          
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Paxi iTechnologies</p>
+    <p>&copy; 2025 Paxi iTechnologies | All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
+/* filepath: c:\Users\PC-PAXIIT\test-git\test-repo\css\style.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #0078d7;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
