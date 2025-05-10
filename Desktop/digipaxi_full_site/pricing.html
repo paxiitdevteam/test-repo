@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="pricingTitle">Pricing & Plans - DigiPaxi</title>
+  <link rel="stylesheet" href="./digipaxi_components/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .pricing-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #0d3c2d;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px 0 #00f6ff11;
+      padding: 36px 28px 28px 28px;
+    }
+    .pricing-title {
+      text-align: center;
+      font-size: 2.2em;
+      color: #00f6ff;
+      margin-bottom: 24px;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+    .pricing-card {
+      background: #061c18;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px 0 #00f6ff11;
+      padding: 32px 22px 28px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      border: 2px solid #00f6ff22;
+      transition: border 0.2s;
+    }
+    .pricing-card.featured {
+      border: 2px solid #00f6ff;
+      box-shadow: 0 4px 24px 0 #00f6ff33;
+    }
+    .pricing-plan {
+      font-weight: bold;
+      color: #00f6ff;
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+    .pricing-price {
+      color: #fff;
+      font-size: 2.1em;
+      margin-bottom: 10px;
+    }
+    .pricing-desc {
+      color: #c7f7ff;
+      font-size: 1.05em;
+      margin-bottom: 18px;
+    }
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 18px;
+      color: #fff;
+      text-align: left;
+    }
+    .pricing-features li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .pricing-features i {
+      color: #00f6ff;
+      margin-right: 8px;
+    }
+    .pricing-btn {
+      background: linear-gradient(90deg, #00f6ff 0%, #00c3ff 100%);
+      color: #061c18;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 32px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .pricing-btn:hover {
+      background: #00f6ff;
+      color: #0d3c2d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Digi<span style="color:#00f6ff">Paxi</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-i18n="home">Home</a></li>
+        <li><a href="about.html" data-i18n="about">About</a></li>
+        <li><a href="dashboard.html" data-i18n="dashboard">Dashboard</a></li>
+        <li><a href="#" data-i18n="solutions">Solutions</a></li>
+        <li><a href="#" data-i18n="services">Services</a></li>
+        <li><a href="#" data-i18n="partners">Partners</a></li>
+        <li><a href="affiliate-products-full.html" data-i18n="affiliateHub">Affiliate Hub</a></li>
+        <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+        <li><a href="auth.html" data-i18n="login">Login/Register</a></li>
+        <li>
+          <div class="language-switch">
+            <a href="#" data-i18n="language">🌐 Language ▾</a>
+            <div id="language-options" class="language-options">
+              <a href="#" onclick="switchLanguage('en')">English (EN)</a>
+              <a href="#" onclick="switchLanguage('fr')">Français (FR)</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-i18n="more">More</a>
+          <ul class="dropdown-menu">
+            <li><a href="careers.html" data-i18n="careers">Careers</a></li>
+            <li><a href="team.html" data-i18n="team">Team</a></li>
+            <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+            <li><a href="testimonials.html" data-i18n="testimonials">Testimonials</a></li>
+            <li><a href="pricing.html" data-i18n="pricing">Pricing</a></li>
+            <li><a href="resources.html" data-i18n="resources">Resources</a></li>
+            <li><a href="case-studies.html" data-i18n="caseStudies">Case Studies</a></li>
+            <li><a href="press.html" data-i18n="press">Press</a></li>
+            <li><a href="events.html" data-i18n="events">Events</a></li>
+            <li><a href="newsletter-archive.html" data-i18n="newsletterArchive">Newsletter Archive</a></li>
+            <li><a href="sitemap.html" data-i18n="sitemap">Sitemap</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <h1 class="pricing-title" data-i18n="pricingTitle">Pricing & Plans</h1>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-plan" data-i18n="planStarter">Starter</div>
+        <div class="pricing-price" data-i18n="planStarterPrice">Free</div>
+        <div class="pricing-desc" data-i18n="planStarterDesc">Perfect for individuals and small businesses starting their digital journey.</div>
+        <ul class="pricing-features">
+          <li><i class="fa fa-check"></i><span data-i18n="planStarterFeat1">Access to basic tools</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planStarterFeat2">Affiliate dashboard</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planStarterFeat3">Email support</span></li>
+        </ul>
+        <button class="pricing-btn" data-i18n="getStarted">Get Started</button>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-plan" data-i18n="planPro">Pro</div>
+        <div class="pricing-price" data-i18n="planProPrice">$49/mo</div>
+        <div class="pricing-desc" data-i18n="planProDesc">For growing teams and businesses who need advanced features and support.</div>
+        <ul class="pricing-features">
+          <li><i class="fa fa-check"></i><span data-i18n="planProFeat1">All Starter features</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planProFeat2">Advanced analytics</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planProFeat3">Priority email & chat support</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planProFeat4">Custom integrations</span></li>
+        </ul>
+        <button class="pricing-btn" data-i18n="choosePlan">Choose Plan</button>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-plan" data-i18n="planEnterprise">Enterprise</div>
+        <div class="pricing-price" data-i18n="planEnterprisePrice">Contact Us</div>
+        <div class="pricing-desc" data-i18n="planEnterpriseDesc">Custom solutions for large organizations and partners with dedicated support.</div>
+        <ul class="pricing-features">
+          <li><i class="fa fa-check"></i><span data-i18n="planEnterpriseFeat1">All Pro features</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planEnterpriseFeat2">Dedicated account manager</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planEnterpriseFeat3">Custom SLAs & onboarding</span></li>
+          <li><i class="fa fa-check"></i><span data-i18n="planEnterpriseFeat4">24/7 phone support</span></li>
+        </ul>
+        <button class="pricing-btn" data-i18n="contactUs">Contact Us</button>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3 data-i18n="aboutDigiPaxi">About DigiPaxi</h3>
+        <p data-i18n="aboutDigiPaxiDesc">DigiPaxi is your gateway to affiliate marketing success in IT and AI. We connect innovative digital products with a global network of motivated affiliates.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-i18n="quickLinks">Quick Links</h3>
+        <div class="footer-links">
+          <a href="./index.html" data-i18n="home">Home</a>
+          <a href="./about.html" data-i18n="about">About Us</a>
+          <a href="./services-it-consulting.html" data-i18n="services">Services</a>
+          <a href="./solutions-digital-transformation.html" data-i18n="solutions">Solutions</a>
+          <a href="./partners-join.html" data-i18n="partners">Partners</a>
+          <a href="./dashboard.html" data-i18n="dashboard">Dashboard</a>
+          <a href="./blog.html" data-i18n="blog">Blog</a>
+          <a href="./sitemap.html" data-i18n="sitemap">Sitemap</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-i18n="contactUs">Contact Us</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> info@digipaxi.com</p>
+          <p><i class="fas fa-envelope"></i> tangongkp@yahoo.com</p>
+          <p><i class="fas fa-phone"></i> +33 (0)7 82 39 13 11</p>
+          <p><i class="fas fa-map-marker-alt"></i> 49 Avenue Lucie Aubrac, 94380, Bonneuil Sur Marne, France</p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-i18n="followUs">Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 DigiPaxi. <span data-i18n="allRightsReserved">All rights reserved.</span></p>
+      <p>
+        <a href="./privacy-policy.html" data-i18n="privacyPolicy">Privacy Policy</a> |
+        <a href="./terms-of-service.html" data-i18n="termsOfService">Terms of Service</a> |
+        <a href="./cookie-policy.html" data-i18n="cookiePolicy">Cookie Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./digipaxi_components/translations.js"></script>
+  <script src="./digipaxi_components/translate.js"></script>
+</body>
+</html> 
