@@ -85,10 +85,10 @@
         <li><a href="auth.html" data-i18n="login">Login/Register</a></li>
         <li>
           <div class="language-switch">
-            <a href="#" data-i18n="language">🌐 Language ▾</a>
+            <a href="#" onclick="return false;" id="lang-switch-btn">🌐 <span data-i18n="language">Language</span> ▾</a>
             <div id="language-options" class="language-options">
-              <a href="#" onclick="switchLanguage('en')">English (EN)</a>
-              <a href="#" onclick="switchLanguage('fr')">Français (FR)</a>
+              <a href="#" class="lang-option" data-lang="en">English (EN)</a>
+              <a href="#" class="lang-option" data-lang="fr">Français (FR)</a>
             </div>
           </div>
         </li>
@@ -153,55 +153,16 @@
           <a href="./index.html" data-i18n="home">Home</a>
           <a href="./about.html" data-i18n="about">About Us</a>
           <a href="./services-it-consulting.html" data-i18n="services">Services</a>
-    <h1 class="newsletter-title" data-translate="newsletterArchiveTitle">Newsletter Archive</h1>
-    <ul class="newsletter-list">
-      <li>
-        <div class="newsletter-date" data-translate="newsletterDate1">April 2024</div>
-        <div class="newsletter-subject" data-translate="newsletterSubject1">AI Trends in Affiliate Marketing</div>
-        <a href="#" class="newsletter-link" data-translate="readNewsletter">Read Newsletter</a>
-      </li>
-      <li>
-        <div class="newsletter-date" data-translate="newsletterDate2">March 2024</div>
-        <div class="newsletter-subject" data-translate="newsletterSubject2">DigiPaxi Partners with Global Brands</div>
-        <a href="#" class="newsletter-link" data-translate="readNewsletter">Read Newsletter</a>
-      </li>
-      <li>
-        <div class="newsletter-date" data-translate="newsletterDate3">February 2024</div>
-        <div class="newsletter-subject" data-translate="newsletterSubject3">How to Maximize Your Affiliate Revenue</div>
-        <a href="#" class="newsletter-link" data-translate="readNewsletter">Read Newsletter</a>
-      </li>
-      <li>
-        <div class="newsletter-date" data-translate="newsletterDate4">January 2024</div>
-        <div class="newsletter-subject" data-translate="newsletterSubject4">Welcome to DigiPaxi: Our Mission & Vision</div>
-        <a href="#" class="newsletter-link" data-translate="readNewsletter">Read Newsletter</a>
-      </li>
-    </ul>
-  </section>
-
-      <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-section">
-        <h3 data-translate="aboutDigiPaxi">About DigiPaxi</h3>
-        <p data-translate="aboutDigiPaxiDesc">DigiPaxi is your gateway to affiliate marketing success in IT and AI. We connect innovative digital products with a global network of motivated affiliates.</p>
-      </div>
-      
-      <div class="footer-section">
-        <h3 data-translate="quickLinks">Quick Links</h3>
-        <div class="footer-links">
-          <a href="./index.html" data-translate="home">Home</a>
-          <a href="./about.html" data-translate="about">About Us</a>
-          <a href="./services-it-consulting.html" data-translate="services">Services</a>
-          <a href="./solutions-digital-transformation.html" data-translate="solutions">Solutions</a>
-          <a href="./partners-join.html" data-translate="partners">Partners</a>
-          <a href="./dashboard.html" data-translate="dashboard">Dashboard</a>
-          <a href="./blog.html" data-translate="blog">Blog</a>
-          <a href="./sitemap.html" data-translate="sitemap">Sitemap</a>
+          <a href="./solutions-digital-transformation.html" data-i18n="solutions">Solutions</a>
+          <a href="./partners-join.html" data-i18n="partners">Partners</a>
+          <a href="./dashboard.html" data-i18n="dashboard">Dashboard</a>
+          <a href="./blog.html" data-i18n="blog">Blog</a>
+          <a href="./sitemap.html" data-i18n="sitemap">Sitemap</a>
         </div>
       </div>
       
       <div class="footer-section">
-        <h3 data-translate="contactUs">Contact Us</h3>
+        <h3 data-i18n="contactUs">Contact Us</h3>
         <div class="contact-info">
           <p><i class="fas fa-envelope"></i> info@digipaxi.com</p>
           <p><i class="fas fa-envelope"></i> tangongkp@yahoo.com</p>
@@ -211,7 +172,7 @@
       </div>
       
       <div class="footer-section">
-        <h3 data-translate="followUs">Follow Us</h3>
+        <h3 data-i18n="followUs">Follow Us</h3>
         <div class="social-icons">
           <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
           <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -224,11 +185,11 @@
     </div>
     
     <div class="footer-bottom">
-      <p>© 2024 DigiPaxi. <span data-translate="allRightsReserved">All rights reserved.</span></p>
+      <p>© 2024 DigiPaxi. <span data-i18n="allRightsReserved">All rights reserved.</span></p>
       <p>
-        <a href="./privacy-policy.html" data-translate="privacyPolicy">Privacy Policy</a> |
-        <a href="./terms-of-service.html" data-translate="termsOfService">Terms of Service</a> |
-        <a href="./cookie-policy.html" data-translate="cookiePolicy">Cookie Policy</a>
+        <a href="./privacy-policy.html" data-i18n="privacyPolicy">Privacy Policy</a> |
+        <a href="./terms-of-service.html" data-i18n="termsOfService">Terms of Service</a> |
+        <a href="./cookie-policy.html" data-i18n="cookiePolicy">Cookie Policy</a>
       </p>
     </div>
   </footer>
