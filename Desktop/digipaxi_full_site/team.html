@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-translate="teamTitle">Our Team - DigiPaxi</title>
+  <link rel="stylesheet" href="./digipaxi_components/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .team-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #0d3c2d;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px 0 #00f6ff11;
+      padding: 36px 28px 28px 28px;
+    }
+    .team-title {
+      text-align: center;
+      font-size: 2.2em;
+      color: #00f6ff;
+      margin-bottom: 24px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+    .team-card {
+      background: #061c18;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px 0 #00f6ff11;
+      padding: 28px 22px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .team-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00f6ff;
+      margin-bottom: 16px;
+    }
+    .team-name {
+      font-weight: bold;
+      color: #00f6ff;
+      margin-bottom: 4px;
+      font-size: 1.1em;
+    }
+    .team-role {
+      color: #c7f7ff;
+      font-size: 0.98em;
+      margin-bottom: 12px;
+    }
+    .team-bio {
+      color: #fff;
+      font-size: 1.05em;
+      margin-bottom: 10px;
+    }
+    .team-social {
+      margin-top: 8px;
+    }
+    .team-social a {
+      color: #00f6ff;
+      margin: 0 6px;
+      font-size: 1.2em;
+      transition: color 0.2s;
+    }
+    .team-social a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Digi<span style="color:#00f6ff">Paxi</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-translate="home">Home</a></li>
+        <li><a href="about.html" data-translate="about">About</a></li>
+        <li><a href="dashboard.html" data-translate="dashboard">Dashboard</a></li>
+        <li><a href="#" data-translate="solutions">Solutions</a></li>
+        <li><a href="#" data-translate="services">Services</a></li>
+        <li><a href="#" data-translate="partners">Partners</a></li>
+        <li><a href="affiliate-products-full.html" data-translate="affiliateHub">Affiliate Hub</a></li>
+        <li><a href="blog.html" data-translate="blog">Blog</a></li>
+        <li><a href="auth.html" data-translate="login">Login/Register</a></li>
+        <li>
+          <div class="language-switch">
+            <a href="#" onclick="return false;" id="lang-switch-btn">🌐 <span data-i18n="language">Language</span> ▾</a>
+            <div id="language-options" class="language-options">
+              <a href="#" class="lang-option" data-lang="en">English (EN)</a>
+              <a href="#" class="lang-option" data-lang="fr">Français (FR)</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-translate="more">More</a>
+          <ul class="dropdown-menu">
+            <li><a href="careers.html" data-translate="careers">Careers</a></li>
+            <li><a href="team.html" data-translate="team">Team</a></li>
+            <li><a href="faq.html" data-translate="faq">FAQ</a></li>
+            <li><a href="testimonials.html" data-translate="testimonials">Testimonials</a></li>
+            <li><a href="pricing.html" data-translate="pricing">Pricing</a></li>
+            <li><a href="resources.html" data-translate="resources">Resources</a></li>
+            <li><a href="case-studies.html" data-translate="caseStudies">Case Studies</a></li>
+            <li><a href="press.html" data-translate="press">Press</a></li>
+            <li><a href="events.html" data-translate="events">Events</a></li>
+            <li><a href="newsletter-archive.html" data-translate="newsletterArchive">Newsletter Archive</a></li>
+            <li><a href="sitemap.html" data-translate="sitemap">Sitemap</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h1 class="team-title" data-translate="teamTitle">Our Team</h1>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Maria Lopez" class="team-avatar" />
+        <div class="team-name" data-translate="teamName2">Maria Lopez</div>
+        <div class="team-role" data-translate="teamRole2">Chief Technology Officer</div>
+        <div class="team-bio" data-translate="teamBio2">Expert in AI, cloud, and scalable digital solutions for global clients.</div>
+        <div class="team-social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David Kim" class="team-avatar" />
+        <div class="team-name" data-translate="teamName3">David Kim</div>
+        <div class="team-role" data-translate="teamRole3">Head of Affiliate Marketing</div>
+        <div class="team-bio" data-translate="teamBio3">Driving affiliate growth and partnerships with innovative strategies.</div>
+        <div class="team-social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Sophie Dubois" class="team-avatar" />
+        <div class="team-name" data-translate="teamName4">Sophie Dubois</div>
+        <div class="team-role" data-translate="teamRole4">Project Manager</div>
+        <div class="team-bio" data-translate="teamBio4">Ensuring project delivery and client satisfaction across all services.</div>
+        <div class="team-social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3 data-translate="aboutDigiPaxi">About DigiPaxi</h3>
+        <p data-translate="aboutDigiPaxiDesc">DigiPaxi is your gateway to affiliate marketing success in IT and AI. We connect innovative digital products with a global network of motivated affiliates.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-translate="quickLinks">Quick Links</h3>
+        <div class="footer-links">
+          <a href="./index.html" data-translate="home">Home</a>
+          <a href="./about.html" data-translate="about">About Us</a>
+          <a href="./services-it-consulting.html" data-translate="services">Services</a>
+          <a href="./solutions-digital-transformation.html" data-translate="solutions">Solutions</a>
+          <a href="./partners-join.html" data-translate="partners">Partners</a>
+          <a href="./dashboard.html" data-translate="dashboard">Dashboard</a>
+          <a href="./blog.html" data-translate="blog">Blog</a>
+          <a href="./sitemap.html" data-translate="sitemap">Sitemap</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-translate="contactUs">Contact Us</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> info@digipaxi.com</p>
+          <p><i class="fas fa-envelope"></i> tangongkp@yahoo.com</p>
+          <p><i class="fas fa-phone"></i> +33 (0)7 82 39 13 11</p>
+          <p><i class="fas fa-map-marker-alt"></i> 49 Avenue Lucie Aubrac, 94380, Bonneuil Sur Marne, France</p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-translate="followUs">Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 DigiPaxi. <span data-translate="allRightsReserved">All rights reserved.</span></p>
+      <p>
+        <a href="./privacy-policy.html" data-translate="privacyPolicy">Privacy Policy</a> |
+        <a href="./terms-of-service.html" data-translate="termsOfService">Terms of Service</a> |
+        <a href="./cookie-policy.html" data-translate="cookiePolicy">Cookie Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./digipaxi_components/translations.js"></script>
+  <script src="./digipaxi_components/translate.js"></script>
+</body>
+</html> 

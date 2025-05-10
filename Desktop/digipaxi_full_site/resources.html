@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-translate="resourcesTitle">Resource Center - DigiPaxi</title>
+  <link rel="stylesheet" href="./digipaxi_components/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .resources-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #0d3c2d;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px 0 #00f6ff11;
+      padding: 36px 28px 28px 28px;
+    }
+    .resources-title {
+      text-align: center;
+      font-size: 2.2em;
+      color: #00f6ff;
+      margin-bottom: 24px;
+    }
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+    .resource-card {
+      background: #061c18;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px 0 #00f6ff11;
+      padding: 28px 22px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+    .resource-icon {
+      font-size: 2.2em;
+      color: #00f6ff;
+      margin-bottom: 10px;
+    }
+    .resource-title {
+      font-weight: bold;
+      color: #00f6ff;
+      font-size: 1.15em;
+      margin-bottom: 6px;
+    }
+    .resource-desc {
+      color: #c7f7ff;
+      font-size: 1.05em;
+      margin-bottom: 12px;
+    }
+    .resource-link {
+      background: linear-gradient(90deg, #00f6ff 0%, #00c3ff 100%);
+      color: #061c18;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 28px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      margin-top: 8px;
+      display: inline-block;
+    }
+    .resource-link:hover {
+      background: #00f6ff;
+      color: #0d3c2d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Digi<span style="color:#00f6ff">Paxi</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-translate="home">Home</a></li>
+        <li><a href="about.html" data-translate="about">About</a></li>
+        <li><a href="dashboard.html" data-translate="dashboard">Dashboard</a></li>
+        <li><a href="#" data-translate="solutions">Solutions</a></li>
+        <li><a href="#" data-translate="services">Services</a></li>
+        <li><a href="#" data-translate="partners">Partners</a></li>
+        <li><a href="affiliate-products-full.html" data-translate="affiliateHub">Affiliate Hub</a></li>
+        <li><a href="blog.html" data-translate="blog">Blog</a></li>
+        <li><a href="auth.html" data-translate="login">Login/Register</a></li>
+        <li>
+          <div class="language-switch">
+            <a href="#" onclick="return false;" id="lang-switch-btn">🌐 <span data-i18n="language">Language</span> ▾</a>
+            <div id="language-options" class="language-options">
+              <a href="#" class="lang-option" data-lang="en">English (EN)</a>
+              <a href="#" class="lang-option" data-lang="fr">Français (FR)</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-translate="more">More</a>
+          <ul class="dropdown-menu">
+            <li><a href="careers.html" data-translate="careers">Careers</a></li>
+            <li><a href="team.html" data-translate="team">Team</a></li>
+            <li><a href="faq.html" data-translate="faq">FAQ</a></li>
+            <li><a href="testimonials.html" data-translate="testimonials">Testimonials</a></li>
+            <li><a href="pricing.html" data-translate="pricing">Pricing</a></li>
+            <li><a href="resources.html" data-translate="resources">Resources</a></li>
+            <li><a href="case-studies.html" data-translate="caseStudies">Case Studies</a></li>
+            <li><a href="press.html" data-translate="press">Press</a></li>
+            <li><a href="events.html" data-translate="events">Events</a></li>
+            <li><a href="newsletter-archive.html" data-translate="newsletterArchive">Newsletter Archive</a></li>
+            <li><a href="sitemap.html" data-translate="sitemap">Sitemap</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Resources Section -->
+  <section class="resources-section">
+    <h1 class="resources-title" data-translate="resourcesTitle">Resource Center</h1>
+    <div class="resources-grid">
+      <div class="resource-card">
+        <div class="resource-icon"><i class="fa fa-file-pdf"></i></div>
+        <div class="resource-title" data-translate="resourceTitle1">DigiPaxi Company Brochure</div>
+        <div class="resource-desc" data-translate="resourceDesc1">Download our latest company overview, services, and success stories.</div>
+        <a href="#" class="resource-link" data-translate="download">Download PDF</a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-icon"><i class="fa fa-book"></i></div>
+        <div class="resource-title" data-translate="resourceTitle2">Affiliate Marketing Guide</div>
+        <div class="resource-desc" data-translate="resourceDesc2">A comprehensive eBook for beginners and pros in affiliate marketing.</div>
+        <a href="#" class="resource-link" data-translate="download">Download eBook</a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-icon"><i class="fa fa-chart-line"></i></div>
+        <div class="resource-title" data-translate="resourceTitle3">Case Study: Digital Transformation</div>
+        <div class="resource-desc" data-translate="resourceDesc3">See how DigiPaxi helped a client achieve 300% growth with digital solutions.</div>
+        <a href="#" class="resource-link" data-translate="viewCaseStudy">View Case Study</a>
+      </div>
+      <div class="resource-card">
+        <div class="resource-icon"><i class="fa fa-video"></i></div>
+        <div class="resource-title" data-translate="resourceTitle4">Webinar: AI for Business</div>
+        <div class="resource-desc" data-translate="resourceDesc4">Watch our latest webinar on leveraging AI to drive business growth.</div>
+        <a href="#" class="resource-link" data-translate="watchNow">Watch Now</a>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3 data-translate="aboutDigiPaxi">About DigiPaxi</h3>
+        <p data-translate="aboutDigiPaxiDesc">DigiPaxi is your gateway to affiliate marketing success in IT and AI. We connect innovative digital products with a global network of motivated affiliates.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-translate="quickLinks">Quick Links</h3>
+        <div class="footer-links">
+          <a href="./index.html" data-translate="home">Home</a>
+          <a href="./about.html" data-translate="about">About Us</a>
+          <a href="./services-it-consulting.html" data-translate="services">Services</a>
+          <a href="./solutions-digital-transformation.html" data-translate="solutions">Solutions</a>
+          <a href="./partners-join.html" data-translate="partners">Partners</a>
+          <a href="./dashboard.html" data-translate="dashboard">Dashboard</a>
+          <a href="./blog.html" data-translate="blog">Blog</a>
+          <a href="./sitemap.html" data-translate="sitemap">Sitemap</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-translate="contactUs">Contact Us</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> info@digipaxi.com</p>
+          <p><i class="fas fa-envelope"></i> tangongkp@yahoo.com</p>
+          <p><i class="fas fa-phone"></i> +33 (0)7 82 39 13 11</p>
+          <p><i class="fas fa-map-marker-alt"></i> 49 Avenue Lucie Aubrac, 94380, Bonneuil Sur Marne, France</p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-translate="followUs">Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 DigiPaxi. <span data-translate="allRightsReserved">All rights reserved.</span></p>
+      <p>
+        <a href="./privacy-policy.html" data-translate="privacyPolicy">Privacy Policy</a> |
+        <a href="./terms-of-service.html" data-translate="termsOfService">Terms of Service</a> |
+        <a href="./cookie-policy.html" data-translate="cookiePolicy">Cookie Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./digipaxi_components/translations.js"></script>
+  <script src="./digipaxi_components/translate.js"></script>
+</body>
+</html> 
