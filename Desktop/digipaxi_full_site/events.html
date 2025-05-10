@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="eventsTitle">Events & Webinars - DigiPaxi</title>
+  <link rel="stylesheet" href="./digipaxi_components/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .events-section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #0d3c2d;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px 0 #00f6ff11;
+      padding: 36px 28px 28px 28px;
+    }
+    .events-title {
+      text-align: center;
+      font-size: 2.2em;
+      color: #00f6ff;
+      margin-bottom: 24px;
+    }
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+    .event-card {
+      background: #061c18;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px 0 #00f6ff11;
+      padding: 28px 22px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+    .event-date {
+      color: #c7f7ff;
+      font-size: 0.98em;
+      margin-bottom: 6px;
+    }
+    .event-title {
+      font-weight: bold;
+      color: #00f6ff;
+      font-size: 1.15em;
+      margin-bottom: 6px;
+    }
+    .event-desc {
+      color: #fff;
+      font-size: 1.05em;
+      margin-bottom: 12px;
+    }
+    .event-link {
+      background: linear-gradient(90deg, #00f6ff 0%, #00c3ff 100%);
+      color: #061c18;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 28px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      margin-top: 8px;
+      display: inline-block;
+    }
+    .event-link:hover {
+      background: #00f6ff;
+      color: #0d3c2d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Digi<span style="color:#00f6ff">Paxi</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-i18n="home">Home</a></li>
+        <li><a href="about.html" data-i18n="about">About</a></li>
+        <li><a href="dashboard.html" data-i18n="dashboard">Dashboard</a></li>
+        <li><a href="#" data-i18n="solutions">Solutions</a></li>
+        <li><a href="#" data-i18n="services">Services</a></li>
+        <li><a href="#" data-i18n="partners">Partners</a></li>
+        <li><a href="affiliate-products-full.html" data-i18n="affiliateHub">Affiliate Hub</a></li>
+        <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+        <li><a href="auth.html" data-i18n="login">Login/Register</a></li>
+        <li>
+          <div class="language-switch">
+            <a href="#" onclick="return false;" id="lang-switch-btn">🌐 <span data-i18n="language">Language</span> ▾</a>
+            <div id="language-options" class="language-options">
+              <a href="#" class="lang-option" data-lang="en">English (EN)</a>
+              <a href="#" class="lang-option" data-lang="fr">Français (FR)</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-i18n="more">More</a>
+          <ul class="dropdown-menu">
+            <li><a href="careers.html" data-i18n="careers">Careers</a></li>
+            <li><a href="team.html" data-i18n="team">Team</a></li>
+            <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+            <li><a href="testimonials.html" data-i18n="testimonials">Testimonials</a></li>
+            <li><a href="pricing.html" data-i18n="pricing">Pricing</a></li>
+            <li><a href="resources.html" data-i18n="resources">Resources</a></li>
+            <li><a href="case-studies.html" data-i18n="caseStudies">Case Studies</a></li>
+            <li><a href="press.html" data-i18n="press">Press</a></li>
+            <li><a href="events.html" data-i18n="events">Events</a></li>
+            <li><a href="newsletter-archive.html" data-i18n="newsletterArchive">Newsletter Archive</a></li>
+            <li><a href="sitemap.html" data-i18n="sitemap">Sitemap</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Events Section -->
+  <section class="events-section">
+    <h1 class="events-title" data-i18n="eventsTitle">Events & Webinars</h1>
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-date" data-i18n="eventDate1">May 15, 2024</div>
+        <div class="event-title" data-i18n="eventTitle1">Webinar: AI for Affiliate Marketing</div>
+        <div class="event-desc" data-i18n="eventDesc1">Join our experts to explore how AI is transforming affiliate marketing and boosting ROI.</div>
+        <a href="#" class="event-link" data-i18n="registerNow">Register Now</a>
+      </div>
+      <div class="event-card">
+        <div class="event-date" data-i18n="eventDate2">June 10, 2024</div>
+        <div class="event-title" data-i18n="eventTitle2">Panel: Digital Transformation Success Stories</div>
+        <div class="event-desc" data-i18n="eventDesc2">Hear from industry leaders about their journeys and lessons learned in digital transformation.</div>
+        <a href="#" class="event-link" data-i18n="registerNow">Register Now</a>
+      </div>
+      <div class="event-card">
+        <div class="event-date" data-i18n="eventDate3">July 2024</div>
+        <div class="event-title" data-i18n="eventTitle3">Workshop: Building Your Affiliate Business</div>
+        <div class="event-desc" data-i18n="eventDesc3">A hands-on workshop for entrepreneurs and marketers to launch and grow their affiliate business.</div>
+        <a href="#" class="event-link" data-i18n="registerNow">Register Now</a>
+      </div>
+      <div class="event-card">
+        <div class="event-date" data-i18n="eventDate4">On Demand</div>
+        <div class="event-title" data-i18n="eventTitle4">Replay: AI for Business Growth</div>
+        <div class="event-desc" data-i18n="eventDesc4">Watch our recorded webinar on leveraging AI to drive business growth and innovation.</div>
+        <a href="#" class="event-link" data-i18n="watchNow">Watch Now</a>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3 data-i18n="aboutDigiPaxi">About DigiPaxi</h3>
+        <p data-i18n="aboutDigiPaxiDesc">DigiPaxi is your gateway to affiliate marketing success in IT and AI. We connect innovative digital products with a global network of motivated affiliates.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-i18n="quickLinks">Quick Links</h3>
+        <div class="footer-links">
+          <a href="./index.html" data-i18n="home">Home</a>
+          <a href="./about.html" data-i18n="about">About Us</a>
+          <a href="./services-it-consulting.html" data-i18n="services">Services</a>
+          <a href="./solutions-digital-transformation.html" data-i18n="solutions">Solutions</a>
+          <a href="./partners-join.html" data-i18n="partners">Partners</a>
+          <a href="./dashboard.html" data-i18n="dashboard">Dashboard</a>
+          <a href="./blog.html" data-i18n="blog">Blog</a>
+          <a href="./sitemap.html" data-i18n="sitemap">Sitemap</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-i18n="contactUs">Contact Us</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> info@digipaxi.com</p>
+          <p><i class="fas fa-envelope"></i> tangongkp@yahoo.com</p>
+          <p><i class="fas fa-phone"></i> +33 (0)7 82 39 13 11</p>
+          <p><i class="fas fa-map-marker-alt"></i> 49 Avenue Lucie Aubrac, 94380, Bonneuil Sur Marne, France</p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 data-i18n="followUs">Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2024 DigiPaxi. <span data-i18n="allRightsReserved">All rights reserved.</span></p>
+      <p>
+        <a href="./privacy-policy.html" data-i18n="privacyPolicy">Privacy Policy</a> |
+        <a href="./terms-of-service.html" data-i18n="termsOfService">Terms of Service</a> |
+        <a href="./cookie-policy.html" data-i18n="cookiePolicy">Cookie Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./digipaxi_components/translations.js"></script>
+  <script src="./digipaxi_components/translate.js"></script>
+</body>
+</html> 
